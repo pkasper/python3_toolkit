@@ -4,7 +4,7 @@ import inspect
 
 import os
 
-log_file = open("logs" + os.path.sep + "log_" + time.strftime("%Y-%m-%d_%H-%M-%S", time.gmtime()) + ".txt", "w")
+#log_file = open("logs" + os.path.sep + "log_" + time.strftime("%Y-%m-%d_%H-%M-%S", time.gmtime()) + ".txt", "w")
 
 
 class DebugLevels:
@@ -61,8 +61,8 @@ def print(*args, label=None, color="", marker_color=None, debug_level=DebugLevel
     print_string += text
 
     builtins.print(print_string)
-    log_file.write(print_string_clean + '\n')
-    log_file.flush()
+#    log_file.write(print_string_clean + '\n')
+#    log_file.flush()
 
 
 class print_colors:
